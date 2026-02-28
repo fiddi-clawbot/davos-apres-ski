@@ -1,0 +1,22 @@
+title: Davos Après-Ski Guide
+description: Der ultimative Guide für die besten Après-Ski Spots in Davos Platz
+url: https://davos-apres-ski.ch
+baseurl: /davos-apres-ski
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  venues:
+    output: true
+    permalink: /davos-apres-ski/:collection/:name/
+
+defaults:
+  - scope:
+      path: "_venues"
+    values:
+      layout: venue
+
+markdown: kramdown

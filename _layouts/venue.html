@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<article>
+    <!-- Hero Image -->
+    {% if page.image %}
+    <div class="detail-hero">
+        <img src="{{ page.image }}" alt="{{ page.name }}">
+    </div>
+    {% endif %}
+
+    <!-- Header -->
+    <div class="detail-header">
+        <h1>{{ page.name }}</h1>
+        
+        <div class="detail-meta">
+            <div class="meta-item">
+                <span class="meta-label">📍 Ort</span>
+                <span class="meta-value">{{ page.location }}, Davos Platz</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">🍹 Typ</span>
+                <span class="meta-value">{{ page.type }}</span>
+            </div>
+            {% if page.atmosphere %}
+            <div class="meta-item">
+                <span class="meta-label">🎭 Atmosphere</span>
+                <span class="meta-value">{{ page.atmosphere }}</span>
+            </div>
+            {% endif %}
+            {% if page.hours %}
+            <div class="meta-item">
+                <span class="meta-label">🕐 Öffnungszeiten</span>
+                <span class="meta-value">{{ page.hours }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- CTA Buttons -->
+        <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-xl);">
+            {% if page.website %}
+            <a href="{{ page.website }}" target="_blank" class="btn">Website</a>
+            {% endif %}
+            {% if page.google_maps %}
+            <a href="{{ page.google_maps }}" target="_blank" class="btn btn-secondary">Google Maps</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div style="line-height: 1.8; color: var(--text-secondary); margin: var(--space-2xl) 0;">
+        {{ content }}
+    </div>
+
+    <!-- Back Link -->
+    <div style="text-align: center; margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: 1px solid var(--border);">
+        <a href="{{ site.baseurl }}/venues/" class="btn btn-secondary">← Zurück zu Venues</a>
+    </div>
+</article>
