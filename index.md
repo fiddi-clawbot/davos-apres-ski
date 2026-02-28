@@ -19,5 +19,5 @@ layout: default
 </ul>
 
 <p style="text-align: center; margin-top: var(--space-2xl);">
-    <a href="{{ site.baseurl }}/all-venues/" class="btn">Alle Venues Entdecken</a>
+    <a href="{{ site.baseurl }}/venues/" class="btn">Alle Venues Entdecken</a>
 </p>

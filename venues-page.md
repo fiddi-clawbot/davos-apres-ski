@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Venues
+permalink: /venues/
 ---
 
 <h1>Après-Ski Venues in Davos Platz</h1>
