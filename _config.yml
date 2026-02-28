@@ -11,7 +11,7 @@ plugins:
 collections:
   venues:
     output: true
-    permalink: /davos-apres-ski/:collection/:name/
+    permalink: /:collection/:name/
 
 defaults:
   - scope:
