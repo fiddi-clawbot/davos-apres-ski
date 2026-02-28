@@ -18,7 +18,7 @@ title: Venues
             <div class="card-meta">
                 <span>{{ venue.type }}</span>
             </div>
-            <p class="card-description">{{ venue.teaser | default: venue.content | strip_html | truncatewords: 20 }}</p>
+            <p class="card-description">{{ venue.content | strip_html | truncatewords: 20 }}</p>
             <div class="card-footer">
                 <a href="{{ venue.url }}" class="cta">Mehr Erfahren →</a>
             </div>
